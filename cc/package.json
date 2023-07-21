@@ -1,0 +1,27 @@
+{
+  "name": "mcc",
+  "version": "1.0.0-a.1",
+  "files": [
+    "bin",
+    "dist",
+    "lib",
+    "inc"
+  ],
+  "bin": {
+    "mcc": "./bin/mcc"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build:dev": "tsc --inlineSourceMap",
+    "build:prod": "tsc",
+    "update-crt": "cp -r ../crt/build/*.lib lib && cp -r ../crt/shared/inc/*.h inc"
+  },
+  "dependencies": {
+    "commander": "^10.0.1",
+    "mmc-core": "file:../core"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.3",
+    "typescript": "^5.0.4"
+  }
+}

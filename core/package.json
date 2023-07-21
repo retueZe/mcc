@@ -1,0 +1,15 @@
+{
+  "name": "mmc-core",
+  "version": "1.0.0-a.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf build",
+    "build:dev": "tsc --inlineSourceMap",
+    "build:prod": "tsc --declaration --declarationDir dist"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.4"
+  }
+}

@@ -1,0 +1,4 @@
+{
+    "nasm.outputFormat": "win32",
+    "nasm.extraFlags": ["-Iinc"]
+}

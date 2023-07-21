@@ -1,0 +1,13 @@
+{
+    "include": ["src/**.ts"],
+    "compilerOptions": {
+        "outDir": "dist",
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "nodenext",
+        "strict": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "downlevelIteration": true
+    }
+}
